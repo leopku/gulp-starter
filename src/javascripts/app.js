@@ -1,5 +1,9 @@
-import './modules'
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import Main from './components/Main';
 
-console.log(`app.js has loaded!`)
+Vue.config.debug = true;
+
+new Vue({
+  el: 'body',
+  components: {Main}
+});

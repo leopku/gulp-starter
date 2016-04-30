@@ -20,9 +20,10 @@
       "src": "javascripts",
       "dest": "javascripts",
       "entries": {
-        "app": ["./app.js"]
+        "app": ["./app.js"],
+        "vendor": ["vue"]
       },
-      "extensions": ["js", "json"],
+      "extensions": ["vue", "js", "json"],
       "babel": {
         "presets": ["es2015", "stage-1"],
         "plugins": []

@@ -34,7 +34,8 @@ module.exports = function(env) {
           query: config.tasks.js.babel
         },
         {
-          test: /\.vue$/,
+          test: /\.vue?$/,
+          exclude: /node_modules/,
           loader: 'vue'
         }        
       ]
