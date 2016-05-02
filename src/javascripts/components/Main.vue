@@ -1,13 +1,21 @@
 <template>
-  <div v-text="data"></div>
+  <div>
+  	<Display></Display>
+  	<Increment></Increment>
+  </div>
 </template>
 
 <script>
+
+import Display from './Display.vue'
+import Increment from './Increment.vue'
+import store from '../store'
+
 export default {
-  data() {
-    return {
-      data: 'Hello vue'
-    }
-  }
+  components: {
+  	Display: Display,
+  	Increment: Increment
+  },
+  store: store
 }
 </script>
